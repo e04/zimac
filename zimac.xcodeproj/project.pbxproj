@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0091EA9D2B050720009A3BED /* zimacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091EA9C2B050720009A3BED /* zimacApp.swift */; };
 		0091EA9F2B050720009A3BED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091EA9E2B050720009A3BED /* ContentView.swift */; };
 		0091EAA12B050722009A3BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0091EAA02B050722009A3BED /* Assets.xcassets */; };
 		0091EAA42B050722009A3BED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0091EAA32B050722009A3BED /* Preview Assets.xcassets */; };
+		0091EAAC2B05077D009A3BED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091EAAB2B05077D009A3BED /* main.swift */; };
+		0091EAAE2B0507AF009A3BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091EAAD2B0507AF009A3BED /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0091EA992B050720009A3BED /* zimac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zimac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0091EA9C2B050720009A3BED /* zimacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zimacApp.swift; sourceTree = "<group>"; };
 		0091EA9E2B050720009A3BED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0091EAA02B050722009A3BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0091EAA32B050722009A3BED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0091EAA52B050722009A3BED /* zimac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zimac.entitlements; sourceTree = "<group>"; };
+		0091EAAB2B05077D009A3BED /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0091EAAD2B0507AF009A3BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,9 @@
 		0091EA9B2B050720009A3BED /* zimac */ = {
 			isa = PBXGroup;
 			children = (
-				0091EA9C2B050720009A3BED /* zimacApp.swift */,
 				0091EA9E2B050720009A3BED /* ContentView.swift */,
+				0091EAAD2B0507AF009A3BED /* AppDelegate.swift */,
+				0091EAAB2B05077D009A3BED /* main.swift */,
 				0091EAA02B050722009A3BED /* Assets.xcassets */,
 				0091EAA52B050722009A3BED /* zimac.entitlements */,
 				0091EAA22B050722009A3BED /* Preview Content */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0091EAAE2B0507AF009A3BED /* AppDelegate.swift in Sources */,
 				0091EA9F2B050720009A3BED /* ContentView.swift in Sources */,
-				0091EA9D2B050720009A3BED /* zimacApp.swift in Sources */,
+				0091EAAC2B05077D009A3BED /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +203,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "音声認識させろ";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -256,8 +261,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "音声認識させろ";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
